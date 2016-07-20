@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=11">
+  <meta charset="utf-8">
+  <title>Learning Store</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="css/jquery-ui.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/owl.css" rel="stylesheet">
+  <link href="css/medium-editor.css" rel="stylesheet">
+  <link href="css/bootstrap_002.css" rel="stylesheet">
+  <link href="css/listjs.css" rel="stylesheet">
+  <link href="wulfdist/css/wulf.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div style="display: none;" id="banner-msg" class="banner"><img src="img/info.png">
+    This website is for Nokia employees only
+  </div>
+
+  <div id="header">
+    <div style="margin-left: 65px" background="img/hm_btn.png">
+      <a id="home" class="rollover" title="HOME"><img src="img/hm.btn.png"></a>
+      <span class="mnTtl">The Learning Store</span>
+      <span class="power">powered by NokiaEDU</span>
+    </div>
+  </div>
+
+  <div id="wrapper">
+    <div id="content">
+      <div class="store" id="items" style="padding-top: 0px">
+	   <div class="n-search n-search-action" style="margin-top:-50px;z-index:100;position:relative;float:right;margin-right:170px">
+		  <a class="n-search-icon">
+			<span class="icon icon-search" style="box-shadow: none; border: none;"></span>
+	      </a>
+		  <button id="searchPrototypeButton" class="btn n-search-button" style="position:absolute;margin-right:-161px">Search</button>
+		  <input class="n-inputfield n-search-input" type="text" placeholder="What would you like to learn today?" value="" id="searchPrototypeInput" width="360px" style="width: 360px;">
+          
+        </div>
+<!---
+	   <div class="searchPrototype" style="margin-top:-50px;z-index:100;position:relative;float:right;margin-right:50px">
+		<input type="text" placeholder="What would you like to learn today?" value="" id="searchPrototypeInput" size="50" />
+        <input type="button" id="searchPrototypeButton" value="Search"/></div>
+		--->
+        <br />
+		<div id="searchPrototypeResults" style="display: none;">
+		  <h1 id="pageTitle">Search results (3)</h1>
+          <p id="collDescription"></p>
+            <ul class="list" id="catalog"><li> <div class="wip"></div> <div class="wip2"></div> <div style="display: block; background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="coll2"></div> <div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="coll1"> <div class="ribbon nokia"><span>Nokia</span></div> <div class="ribbon alu"><span>Alu</span></div> <img src="img/i_006.jpg" class="Icon"> <img src="img/launch.png" class="shortcut" > <img src="img/new-icon.png" class="new-badge"> <img src="img/timeline-icon.png" class="timeline-badge"> </div> <div class="alu-badge"></div> <div class="nokia-badge"></div> <div class="Title">Quality Portfolio&nbsp;- Competency Pillars</div><div class="ID" hidden="">n.1459327336399</div> </li><li > <div class="wip"></div> <div class="wip2"></div> <div style="display: block; background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="coll2"></div> <div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="coll1"> <div class="ribbon nokia"><span>Nokia</span></div> <div class="ribbon alu"><span>Alu</span></div> <img src="img/i.jpg" class="Icon"> <img src="img/launch.png" class="shortcut" > <img src="img/new-icon.png" class="new-badge"> <img src="img/timeline-icon.png" class="timeline-badge"> </div> <div class="alu-badge"></div> <div class="nokia-badge"></div> <div class="Title">1 in 90 Dialog for Line Managers</div><div class="ID" hidden="">n.1460728935253</div> </li><li > <div class="wip"></div> <div class="wip2"></div> <div style="background: rgb(18, 65, 145) none repeat scroll 0% 0%;" class="coll2"></div> <div style="background: rgb(18, 65, 145) none repeat scroll 0% 0%;" class="coll1"> <div class="ribbon nokia"><span>Nokia</span></div> <div class="ribbon alu"><span>Alu</span></div> <img src="img/i.png" class="Icon"> <img src="img/launch.png" class="shortcut" > <img src="img/new-icon.png" class="new-badge"> <img src="img/timeline-icon.png" class="timeline-badge"> </div> <div class="alu-badge"></div> <div class="nokia-badge"></div> <div class="Title">Skillsoft Online Learning Portal (Video, eBooks, Books24x7, etc.)</div><div class="ID" hidden="">p.9</div> </li></ul>
+        </div>
+	  </div>
+
+      <div id="lsMarketing">
+    <!-- Half Page Image Background Carousel Header -->
+
+        <div id="home-carousel" class="owl-carousel owl-theme owl-loaded">
+
+
+
+
+
+
+        <div class="owl-stage-outer"><div style="transform: translate3d(-6185px, 0px, 0px); transition: all 0.5s ease 0s; width: 12370px;" class="owl-stage"><div style="width: 1227px; margin-right: 10px;" class="owl-item cloned"><div class="item">
+            <a><img src="img/MOOC2.png" class="share"></a>
+          </div></div><div style="width: 1227px; margin-right: 10px;" class="owl-item cloned"><div class="item">
+            <a><img src="img/slider_online-books.jpg" class="share"></a>
+          </div></div><div style="width: 1227px; margin-right: 10px;" class="owl-item"><div class="item">
+            <a><img src="img/slider-1-in-90.jpg" class="share"></a>
+          </div></div><div style="width: 1227px; margin-right: 10px;" class="owl-item"><div class="item">
+            <a href="https://intranet.nokia.com/global/myservices/academy/pages/ls-web-session.aspx" target="_blank"><img src="img/slider-webinar-learning-store2.png" class="share"></a>
+          </div></div><div style="width: 1227px; margin-right: 10px;" class="owl-item"><div class="item">
+            <a><img src="img/slider-primer-tablet.jpg" class="share"></a>
+          </div></div><div style="width: 1227px; margin-right: 10px;" class="owl-item active"><div class="item">
+            <a><img src="img/Banner-EBT15-990x300.png" class="share"></a>
+          </div></div><div style="width: 1227px; margin-right: 10px;" class="owl-item"><div class="item">
+            <a><img src="img/MOOC2.png" class="share"></a>
+          </div></div><div style="width: 1227px; margin-right: 10px;" class="owl-item"><div class="item">
+            <a><img src="img/slider_online-books.jpg" class="share"></a>
+          </div></div><div style="width: 1227px; margin-right: 10px;" class="owl-item cloned"><div class="item">
+            <a><img src="img/slider-1-in-90.jpg" class="share"></a>
+          </div></div><div style="width: 1227px; margin-right: 10px;" class="owl-item cloned"><div class="item">
+            <a href="https://intranet.nokia.com/global/myservices/academy/pages/ls-web-session.aspx" target="_blank"><img src="img/slider-webinar-learning-store2.png" class="share"></a>
+          </div></div></div></div><div class="owl-controls"><div class="owl-nav"><div style="display: none;" class="owl-prev">prev</div><div style="display: none;" class="owl-next">next</div></div><div class="owl-dots" style=""><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+
+        <div id="homePage"><div class="catHead">NokiaEDU Product Primer for all Employees</div><div><ul class="list"><li class="collection"><div class="coll2" style="display: block; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div><div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="coll1"><img src="img/i_005.jpg"></div>MN Product Primer</li><li class="collection"><div class="coll2" style="display: block; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div><div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="coll1"><img src="img/c.jpg"></div>ION Product Primer</li><li class="collection"><div class="coll2" style="display: block; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div><div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="coll1"><img src="img/i_003.jpg"></div>A&amp;A Product Primer</li><li class="collection"><div class="coll2" style="display: block; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div><div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="coll1"><img src="img/c_002.jpg"></div>FN Product Primer</li><li class="collection"><div class="coll2" style="display: block; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div><div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="coll1"><img src="img/n.jpg"></div>Product Sales Overview</li></ul></div><div class="catHead">Featured Learning available to all Employees</div><div><ul class="list"><li class="collection"><div class="coll2" style="display: block; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div><div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="coll1"><img src="img/i_003.png"></div>Nokia Induction</li><li><div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="coll1"><img src="img/i_002.jpg"></div>1 in 90 Dialog</li><li class="collection"><div class="coll2" style="display: block; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div><div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="coll1"><img src="img/i_004.jpg"></div>Finance training for everyone</li><li><div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="coll1"><img src="img/n_002.jpg"></div>Meeting Experience</li><li><div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="coll1"><img src="img/i_002.png"></div>Nokia People Focus: helping all Nokia people to thrive</li></ul></div></div>
+      </div>
+
+      <div class="present-cat" style="display:none">
+        Present in these collection(s) : <span></span>
+      </div>
+      <div id="noResult" style="">
+        <div class="findMore" style="background-image: url('img/searchMyPLE.png');">
+          If you didn't find what you were looking for, please visit the links hereafter to locate more training:
+          <ul>
+            <li>Legacy Nokia: <a id="slc" href="https://learningcentral.sabanow.net/Saba/Web/Cloud" target="_blank"><b>Learning Central</b></a></li>
+            <li>Legacy ALU: <a id="csod" href="https://alcatel-lucent.csod.com/" target="_blank"><b>CSOD</b></a></li>
+            <li>Legacy ALU: <a id="ple" href="http://myple.alcatel-lucent.com/" target="_blank"><b>My PLE</b></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="sidebar">
+      <img src="img/learning_solutions.png" alt="Learning Solutions">
+      <div class="nav">
+        <button class="menu">
+          <img src="img/launch.png" height="13"> My Shortcuts </button>
+        <button class="menu">What's New</button>
+        <button class="menu">Collections</button>
+        <button class="menu">MOOCs</button>
+      </div>
+      <div class="title"><b>PROF. DEVELOPMENT</b></div>
+      <div class="nav">
+        <button class="menu">Personal Skills</button>
+        <button class="menu">Leadership</button>
+        <button class="menu">Innovation &amp; Change</button>
+        <button class="menu">Project Management</button>
+        <button class="menu">Process &amp; Tools</button>
+        <button class="menu">Finance</button>
+        <button class="menu">Quality</button>
+        <button class="menu">Sales &amp; Marketing</button>
+        <button class="menu">Legal &amp; Compliance</button>
+      </div>
+
+      <div class="title"><b>TECHNOLOGY</b></div>
+        <button class="menu">Telecom Technology</button>
+        <button class="menu">Software Technology</button>
+        <button class="menu">Nokia Technical Cert.</button>
+
+      <div class="title"><b>BG SPECIFIC PROG.</b></div>
+      <div class="nav">
+        <button class="menu">For MN People</button>
+        <button class="menu">For FN People</button>
+        <button class="menu">For A&amp;A People</button>
+        <button class="menu">For ION People</button>
+        <button class="menu">For CIOO People</button>
+        <button class="menu">For GS People</button>
+      </div>
+
+      <div class="title"><b>NOKIA PRODUCTS</b></div>
+      <div class="nav">
+        <button class="menu">Mobile Radio</button>
+        <button class="menu">Mobile Core</button>
+        <button class="menu">IP/Optical Networks</button>
+        <button class="menu">Fixed Networks</button>
+        <button class="menu">Applications &amp; Analytics</button>
+      </div>
+
+      <img src="img/more.png" alt="More" style="padding-top:10px;padding-bottom:5px;" border="0">
+      <div class="nav">
+        <button class="menu">Global Open Calendar</button>
+        <button class="menu">Learning Platforms</button>
+        <button class="menu">Online Books</button>
+        <button class="menu">User Guide</button>
+      </div>
+    </div>
+ </div>
+
+<div style="clear: both;"></div>
+
+<div id="footer">
+  <div class="left">Copyright &copy; 2016 Nokia.<br>All Rights Reserved.</div>
+
+  <div class="right"><img src="img/logo.png" alt="" border="0" width="120"></div>
+
+  <div class="mid">
+    <a href="https://www.yammer.com/nokia.com/#/threads/inGroup?type=in_group&amp;feedId=7589336" target="_blank">Feedback</a> |
+    <!--a href="https://intranet.nokia.com/global/myservices/academy/pages/ce.aspx" target="_blank">Learning Managers</a> | -->
+    <a href="https://intranet.nokia.com/global/myservices/academy/pages/gcc.aspx" target="_blank">Global Contact Center</a> |
+    <a href="https://www.yammer.com/nokia.com/#/threads/inGroup?type=in_group&amp;feedId=7501308" target="_blank">NokiaEDU on Yammer</a>
+  </div>
+</div>
+
+   <!--Generic item modal window-->
+  <div class="modal fade" id="itemModal" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="itemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="back-ls" data-dismiss="modal" style="width: 300px;" aria-label="Close"><img src="img/left.png">Back to the Learning Store</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"></h4>
+          <div class="icon-badge"></div>
+        </div>
+
+
+        <!--Item-->
+        <div class="modal-body itemWindow">
+          <div style="float:left; width:155px;">
+             <img class="icon">
+          </div>
+          <div style="display: inline-block; width:52%; text-align:left" class="targetDiv">
+            <span class="target"></span>
+          </div>
+          <div style="float:right" class="links">
+            <input class="url" type="hidden">
+            <input class="url2" type="hidden">
+            <input class="itemID" type="hidden">
+            <div style="display:table;">
+              <div style="display:table-cell;">
+                <div><button class="btn btn-primary" id="btn-launch" style="table-cell;">Legacy ALU</button></div>
+                <div><button class="btn btn-primary" id="btn-launch2" style="table-cell;">Launch</button></div>
+              </div>
+            </div>
+          </div>
+          <div style="clear:both;" class="contenu">
+            <div class="testimonials">
+              <h5>Testimonials</h5>
+              <span></span>
+            </div>
+            <div class="description">
+              <h5>Description</h5>
+              <span></span>
+            </div>
+            <div id="extra" style="text-align:center;margin-top:10px;margin-left:-8px"></div>
+            <div class="objectives">
+              <h5>Learning Objectives</h5>
+              <span></span>
+            </div>
+            <div class="duration">
+              <h5>Duration</h5>
+              <span></span>
+            </div>
+            <div class="ratings">
+              <h5>Ratings</h5>
+              <span></span>
+            </div>
+            <div class="associates">
+              <h5>Associated Items</h5>
+              <span></span>
+            </div>
+            <div class="prerequisites">
+              <h5>Prerequisites</h5>
+              <span></span>
+            </div>
+            <div class="request">
+              <h5>How to request</h5>
+              <span></span>
+            </div>
+            <div class="MoreInfo">
+              <h5>More information</h5>
+              <span></span>
+            </div>
+
+            <div class="collections">
+              <h5>Collections</h5>
+              <span></span>
+            </div>
+
+            <div class="owner">
+              <h5>Owner</h5>
+              <span></span>
+            </div>
+
+            <div class="name" style="font-size: 60%">
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!--Simple-->
+        <div class="modal-body simpleWindow">
+          <div style="float:left; width:33%;">
+             <img id="icon4" style="padding:0 5px 15px 0;">
+          </div>
+          <div style="display: inline-block; width:50%; text-align:left">
+            <span id="target"></span>
+          </div>
+          <div style="clear:both;">
+            <div id="description4"></div>
+            <div id="extra" style="text-align:center;margin-top:10px;margin-left:-8px"></div>
+            <div id="YT" style="text-align:center">
+              <div id="player"></div>
+            </div>
+          </div>
+        </div>
+
+        <!--Html-->
+        <div class="modal-body htmlWindow">
+          <div style="overflow: auto;">
+
+            <div class="description">
+              <span></span>
+            </div>
+          </div>
+          <div class="body-subtitles">
+            <div class="body-subtitle1">
+              <h3></h3>
+              <span></span>
+            </div>
+            <div class="body-subtitle2">
+              <h3></h3>
+              <span></span>
+            </div>
+            <div class="body-subtitle3">
+              <h3></h3>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <!--Timeline-->
+        <div class="modal-body timelineWindow">
+          <div id="timeline-text"></div>
+          <div id="timeline-edit"></div>
+          <div id="timeline">
+            <div id="carousel" class="owl-carousel">
+            </div>
+            <div id="timeline-description">
+            </div>
+          </div>
+        </div>
+
+        <!--Edit-->
+        <div class="modal-body editWindow">
+          <div style="clear:both;">
+            <div id="listItems"></div>
+          </div>
+        </div>
+        <div class="modal-body collectionWindow">
+          <div style="width:155px;">
+             <img class="icon">
+          </div>
+          <div style="clear:both;">
+            <h5>Description</h5>
+            <div class="description">
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="wulfdist/js/dependencies/jquery.min.js"></script>
+  <script type="text/javascript" src="wulfdist/js/dependencies/bootstrap.min.js"></script>
+  <script type="text/javascript" src="wulfdist/js/dependencies/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="wulfdist/js/wulf.min.js"></script>
+  <script type="text/javascript" src="js/searchprototype.js"></script>
+
+</body></html>

@@ -1,0 +1,157 @@
+/*!
+ * WULF v1.2.6 (http://wulf-demo.dynamic.nsn-net.net/)
+ * Copyright 2016 Nokia Solutions and Networks. All rights Reserved.
+ */
+
+/*
+ * WULF (http://networks.nokia.com/)
+ * Copyright (C) 2015 Nokia Solutions and Networks. All rights Reserved.
+ */
+.n-lifecycle {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 150px;
+  height: 34px;
+  margin-right: -11px;
+  margin-left: -11px;
+}
+.n-lifecycle .n-lifecycle-content.bottom {
+  position: absolute;
+  width: 88px;
+  height: 24px;
+  background-image: linear-gradient(to bottom, #eee 0%, #e7e7e7);
+  border: 1px solid #d7d7d7;
+  transform: rotate(-45deg) skewY(45deg);
+}
+.n-lifecycle .n-lifecycle-content.bottom:before {
+  position: absolute;
+  top: 23px;
+  left: -13px;
+  width: 88px;
+  height: 24px;
+  content: '';
+  background-image: linear-gradient(to bottom, #e7e7e7, #ddd 100%);
+  border: 1px solid #d7d7d7;
+  transform: skewX(-45deg);
+}
+.n-lifecycle .n-lifecycle-content.top {
+  position: absolute;
+  top: 5px;
+  left: -9px;
+  width: 106px;
+  height: 31px;
+  background-image: linear-gradient(to bottom, #eee 0%, #ddd 100%);
+}
+.n-lifecycle .n-lifecycle-content.top span {
+  position: absolute;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 14px;
+  color: #474747;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.n-lifecycle .n-lifecycle-content.top:before {
+  position: absolute;
+  top: 3px;
+  left: 95px;
+  width: 24px;
+  height: 24px;
+  content: '';
+  background-image: linear-gradient(135deg, #eee 0%, #ddd 100%);
+  border-top: 1px solid #d7d7d7;
+  border-right: 1px solid #d7d7d7;
+  transform: rotate(45deg);
+}
+.n-lifecycle.selected .n-lifecycle-content.bottom {
+  z-index: -2;
+  background-image: linear-gradient(to bottom, #777 0%, #525252);
+  border: 1px solid #353535;
+  box-shadow: 0 0 2px #000;
+}
+.n-lifecycle.selected .n-lifecycle-content.bottom:before {
+  background-image: linear-gradient(to bottom, #525252, #2f2f2f 100%);
+  border: 1px solid #353535;
+  box-shadow: 0 0 2px #000;
+}
+.n-lifecycle.selected .n-lifecycle-content.top {
+  background-image: linear-gradient(to bottom, #777 0%, #2f2f2f 100%);
+}
+.n-lifecycle.selected .n-lifecycle-content.top span {
+  color: #fff;
+}
+.n-lifecycle.selected .n-lifecycle-content.top:before {
+  z-index: -1;
+  background-image: linear-gradient(135deg, #777 0%, #2f2f2f 100%);
+  border-top: 1px solid #353535;
+  border-right: 1px solid #353535;
+  box-shadow: 2px 0 2px #000;
+}
+.n-lifecycle-start {
+  left: -15px;
+  margin-left: 10px;
+}
+.n-lifecycle-start .n-lifecycle-content.top {
+  top: 3px;
+  width: 123px;
+  height: 34px;
+  border: 1px solid #d7d7d7;
+  border-right: none;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.n-lifecycle-start .n-lifecycle-content.top.selected {
+  border: 1px solid #353535;
+  border-right: none;
+  box-shadow: -2px 0 2px #000;
+}
+.n-lifecycle-start .n-lifecycle-content.top:before {
+  top: 4px;
+  left: 110px;
+}
+.n-lifecycle-start .n-lifecycle-content.top.selected:before {
+  box-shadow: 1px 0 2px #000;
+}
+.n-lifecycle-start.selected .n-lifecycle-content.top {
+  border: 1px solid #353535;
+  border-right: none;
+  box-shadow: -2px 0 2px #000;
+}
+.n-lifecycle-start.selected .n-lifecycle-content.top:before {
+  box-shadow: 1px 0 2px #000;
+}
+.n-lifecycle-end .n-lifecycle-content.bottom {
+  height: 23px;
+}
+.n-lifecycle-end .n-lifecycle-content.bottom:before {
+  height: 25px;
+}
+.n-lifecycle-end .n-lifecycle-content.top {
+  top: 3px;
+  left: -8px;
+  width: 124px;
+  height: 34.5px;
+  border: 1px solid #d7d7d7;
+  border-left: none;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.n-lifecycle-end .n-lifecycle-content.top.selected {
+  border: 1px solid #353535;
+  border-left: none;
+  box-shadow: 2px 0 2px #000;
+}
+.n-lifecycle-end .n-lifecycle-content.top:before {
+  display: none;
+}
+.n-lifecycle-end.selected .n-lifecycle-content.top {
+  border: 1px solid #353535;
+  border-left: none;
+  box-shadow: 2px 0 2px #000;
+}

@@ -1,0 +1,155 @@
+/*!
+ * WULF v1.2.6 (http://wulf-demo.dynamic.nsn-net.net/)
+ * Copyright 2016 Nokia Solutions and Networks. All rights Reserved.
+ */
+
+/*
+ * WULF (http://networks.nokia.com/)
+ * Copyright (C) 2016 Nokia Solutions and Networks. All rights Reserved.
+ */
+/*
+ * WULF (http://networks.nokia.com/)
+ * Copyright (C) 2015 Nokia Solutions and Networks. All rights Reserved.
+ */
+/*
+ * WULF (http://networks.nokia.com/)
+ * Copyright (C) 2015 Nokia Solutions and Networks. All rights Reserved.
+ */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.alert .alert-link {
+  font-weight: bold;
+}
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+.alert > p + p {
+  margin-top: 5px;
+}
+.alert-dismissable,
+.alert-dismissible {
+  padding-right: 35px;
+}
+.alert-dismissable .close,
+.alert-dismissible .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+.alert-success .alert-link {
+  color: #2b542c;
+}
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+.alert-info .alert-link {
+  color: #245269;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-warning hr {
+  border-top-color: #f7e1b5;
+}
+.alert-warning .alert-link {
+  color: #66512c;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+.alert-danger .alert-link {
+  color: #843534;
+}
+/*
+ * WULF (http://networks.nokia.com/)
+ * Copyright (C) 2015 Nokia Solutions and Networks. All rights Reserved.
+ */
+.alert {
+  position: relative;
+  padding: 12px 40px 12px 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #474747;
+  background-image: -webkit-linear-gradient(top, #fff 0%, #eee 100%);
+  background-image:      -o-linear-gradient(top, #fff 0%, #eee 100%);
+  background-image:         linear-gradient(to bottom, #fff 0%, #eee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
+  background-repeat: repeat-x;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+.alert > .icon:first-child {
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.alert > .n-close {
+  position: absolute;
+  top: 17px;
+  right: 25px;
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+.alert > .n-close .icon-close {
+  border-radius: 3px;
+}
+.alert > .n-close:focus {
+  top: 16px;
+  right: 26px;
+  outline: none;
+}
+.alert > .n-close:focus > span {
+  border: 1px solid #666;
+}
+.alert > .n-close:hover {
+  top: 16px;
+  right: 26px;
+  outline: none;
+}
+.alert > .n-close:hover > span {
+  border: 1px solid #00a1cc;
+}
+.alert .n-close > span {
+  position: absolute;
+  top: 0;
+  display: block;
+}
+.alert-error {
+  font-weight: bold;
+  color: #be0006;
+}

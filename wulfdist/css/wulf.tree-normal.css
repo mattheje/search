@@ -1,0 +1,391 @@
+/*!
+ * WULF v1.2.6 (http://wulf-demo.dynamic.nsn-net.net/)
+ * Copyright 2016 Nokia Solutions and Networks. All rights Reserved.
+ */
+
+/*
+ * WULF (http://networks.nokia.com/)
+ * Copyright (C) 2015 Nokia Solutions and Networks. All rights Reserved.
+ * Source : tree.less
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.fuelux .tree {
+  position: relative;
+  padding: 10px 15px 0 15px;
+  overflow-x: auto;
+  overflow-y: auto;
+  list-style: none;
+  border: 1px solid #999;
+  border-radius: 4px 4px 4px 4px;
+}
+.fuelux .tree *:focus {
+  outline: none;
+}
+.fuelux .tree button:focus {
+  color: #999;
+}
+.fuelux .tree ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.fuelux .tree li {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.fuelux .tree .tree-loader {
+  margin-left: 45px;
+}
+.fuelux .tree .tree-open > .tree-branch-header .glyphicon-play {
+  position: relative;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.fuelux .tree [data-children=false] > .tree-branch-header .icon-caret:before {
+  content: '\00a0';
+}
+.fuelux .tree .tree-branch .tree-branch-header {
+  position: relative;
+  white-space: nowrap;
+  border-radius: 6px;
+}
+.fuelux .tree .tree-branch .tree-branch-header .tree-branch-name:hover {
+  color: #999;
+}
+.fuelux .tree .tree-branch .tree-branch-header .glyphicon-play {
+  padding-right: 5px;
+  padding-left: 7px;
+  font-size: 10px;
+}
+.fuelux .tree .tree-branch .tree-branch-header .glyphicon-play:before {
+  position: relative;
+  top: -2px;
+}
+.fuelux .tree .tree-branch .tree-branch-header .tree-branch-name {
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  border-radius: 6px;
+}
+.fuelux .tree .tree-branch .tree-branch-header label {
+  padding-left: 3px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+.fuelux .tree .tree-branch .tree-branch-children {
+  margin-left: 14px;
+}
+.fuelux .tree .tree-branch[haschildren='false'] .icon-caret {
+  visibility: hidden;
+}
+.fuelux .tree .tree-item {
+  position: relative;
+  margin-left: 26px;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.fuelux .tree .tree-item .tree-item-name {
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  border-radius: 6px;
+}
+.fuelux .tree .tree-item .tree-item-name:hover {
+  color: #999;
+}
+.fuelux .tree .tree-item.tree-selected .tree-item-name {
+  color: #333;
+  background-color: #efefef;
+}
+.fuelux .tree .tree-item label {
+  padding-left: 7px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+.fuelux .tree .icon-caret:hover + .tree-branch-name {
+  color: #999;
+}
+.fuelux .tree.tree-folder-select .tree-branch .icon-caret {
+  background-color: transparent;
+  border: 0;
+}
+.fuelux .tree.tree-folder-select .tree-branch .icon-caret:hover {
+  color: #999;
+  cursor: pointer;
+}
+.fuelux .tree.tree-folder-select .tree-branch > .tree-branch-name {
+  padding: 1px 5px 0 5px;
+  border-radius: 6px;
+}
+.fuelux .tree.tree-folder-select .tree-branch > .tree-branch-name.tree-selected {
+  background-color: #efefef;
+}
+.fuelux .tree.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name {
+  background-color: #efefef;
+}
+.fuelux .tree.tree-folder-select .tree-branch.tree-selected > .tree-branch-header .tree-branch-name:hover {
+  background-color: #efefef;
+}
+/*
+ * WULF (http://networks.nokia.com/)
+ * Copyright (C) 2015 Nokia Solutions and Networks. All rights Reserved.
+ */
+.fuelux .tree {
+  height: 100%;
+  padding: 2px 2px 6px 2px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #fff;
+  border-radius: 7px;
+}
+.fuelux .tree .tree-item {
+  margin: 0;
+}
+.fuelux .tree .tree-item .tree-item-name {
+  display: inline-block;
+  width: 100%;
+  height: 25px;
+  padding-left: 5px;
+  font-weight: normal;
+  line-height: 25px;
+  color: #333;
+  text-align: left;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+.fuelux .tree .tree-item .tree-item-name:hover {
+  color: #000;
+}
+.fuelux .tree .tree-item .tree-item-name:hover .tree-label {
+  border-bottom: 1px solid #124191;
+}
+.fuelux .tree .tree-item .tree-item-name:focus {
+  border: 1px solid #666;
+}
+.fuelux .tree .tree-item .tree-item-name .fueluxicon-bullet,
+.fuelux .tree .tree-item .tree-item-name .glyphicon-ok {
+  top: 0;
+  width: 12px;
+  margin-right: 3px;
+  font-size: 10px;
+}
+.fuelux .tree .tree-item.tree-selected .tree-item-name {
+  color: #fff;
+  background-color: #0b6daf;
+}
+.fuelux .tree .tree-item.tree-selected .tree-item-name:hover .tree-label {
+  border-bottom: 1px solid transparent;
+}
+.fuelux .tree .tree-item.tree-selected .tree-item-name:focus {
+  border: 1px solid transparent;
+}
+.fuelux .tree .tree-item:last-child {
+  border-bottom: 1px dotted #c3c5d0;
+  border-radius: 0;
+}
+.fuelux .tree .icon-folder {
+  display: none;
+}
+.fuelux .tree .tree-branch {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.fuelux .tree .tree-branch .tree-branch-header {
+  height: 25px;
+  padding-left: 6px;
+}
+.fuelux .tree .tree-branch .tree-branch-header .glyphicon-play {
+  display: inline-block;
+  width: 14px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  font-size: 14px;
+}
+.fuelux .tree .tree-branch .tree-branch-header .glyphicon-play:before {
+  top: 0;
+}
+.fuelux .tree .tree-branch .tree-branch-header .glyphicon-play:hover {
+  color: #666;
+}
+.fuelux .tree .tree-branch .tree-branch-header .tree-branch-name {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 25px;
+  font-weight: normal;
+  color: #333;
+  text-align: left;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+.fuelux .tree .tree-branch .tree-branch-header .tree-branch-name:hover {
+  color: #000;
+}
+.fuelux .tree .tree-branch .tree-branch-header .tree-branch-name:hover .tree-label {
+  border-bottom: 1px solid #124191;
+}
+.fuelux .tree .tree-branch .tree-branch-header .tree-branch-name:focus {
+  left: -6px;
+  display: inline-block;
+  width: calc(100% + 6px);
+  height: 25px;
+  padding-left: 6px;
+  border: 1px solid #666;
+}
+.fuelux .tree .tree-branch .tree-branch-children {
+  padding-left: 14px;
+  margin-left: 0;
+}
+.fuelux .tree .tree-branch.tree-selected > .tree-branch-header {
+  padding-top: 1px;
+  color: #fff;
+  background: #0b6daf none;
+  border-radius: 0;
+}
+.fuelux .tree .tree-branch.tree-selected > .tree-branch-header .tree-branch-name {
+  left: 0;
+  padding-left: 0;
+  color: #fff;
+  background: transparent !important;
+  border: transparent;
+}
+.fuelux .tree .tree-branch:last-child {
+  margin-bottom: 4px;
+}
+.fuelux .tree .tree-open > .tree-branch-header .glyphicon-play {
+  top: 0;
+}
+.fuelux .tree-scroll > .mCustomScrollBox {
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+.fuelux .tree-scroll > .mCustomScrollBox > .mCSB_container {
+  margin-right: 0;
+}
+.fuelux .tree-has-checkbox .checkbox {
+  position: absolute;
+  top: 4px;
+  display: inline-block;
+}
+.fuelux .tree-has-checkbox .checkbox input[type="checkbox"]:indeterminate + label:before {
+  left: 0;
+  width: 14px;
+  height: 14px;
+  font-family: "Icons", Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  line-height: .15em;
+  color: #666;
+  text-align: center;
+  content: "\002D";
+  border-color: #adadad;
+  border-radius: 4px;
+  transform: scale(1, 1);
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .fuelux .tree-has-checkbox .checkbox input[type="checkbox"]:indeterminate + label:before {
+    font-size: 1.5em;
+    line-height: .35em;
+  }
+}
+.fuelux .tree-has-checkbox .tree-label {
+  position: absolute;
+  top: 3px;
+  margin-left: 22px;
+}
+.fuelux .tree-has-checkbox .icon-item {
+  display: inline;
+  line-height: 22px;
+}
+.fuelux .tree-has-checkbox .tree-title {
+  margin-left: 8px;
+}
+.fuelux .tree-has-checkbox .tree-item .tree-item-name .checkbox:hover label:before,
+.fuelux .tree-has-checkbox .tree-branch .tree-branch-name .checkbox:hover label:before {
+  border: 1px solid #00a1cc;
+  box-shadow: 0 1px 3px 0 #b2b2b2, 0 0 0 1px #66dfff inset;
+}
+.fuelux .tree-has-checkbox .tree-item .tree-item-name .checkbox:active label:before,
+.fuelux .tree-has-checkbox .tree-branch .tree-branch-name .checkbox:active label:before {
+  border: 1px solid #1b1b1b;
+  box-shadow: 0 1px 3px 0 #1b1b1b inset;
+}
+.fuelux .tree-has-checkbox .checkbox input[type="checkbox"]:focus + label:before {
+  border: 1px solid #1b1b1b;
+  box-shadow: 0 1px 3px 0 #1b1b1b;
+}
+.fuelux .tree-has-checkbox .checkbox input[type="checkbox"]:not(.sr-only):checked ~ label:before,
+.fuelux .tree-has-checkbox .checkbox-inline input[type="checkbox"]:not(.sr-only):checked ~ label:before {
+  left: 0;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  padding: 1px 1px 1px 0;
+  font-family: "Icons", Helvetica, Arial, sans-serif;
+  line-height: 10px;
+  color: #666;
+  text-align: center;
+  content: '\e600';
+  background: #fff;
+  border: 1px solid #b2b2b2;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 #b2b2b2;
+}
+.fuelux .tree-has-checkbox .glyphicon {
+  top: 5px;
+}
+.fuelux .tree-has-checkbox .tree-branch .tree-branch-header .glyphicon-play {
+  width: 16px;
+  padding-top: 2px;
+}
+.fuelux .tree-has-checkbox .tree-open > .tree-branch-header .glyphicon-play {
+  top: 1px;
+  width: 16px;
+  padding-bottom: 1px;
+}
+.fuelux .tree-has-checkbox .tree-branch .tree-branch-name,
+.fuelux .tree-has-checkbox .tree-item .tree-item-name {
+  line-height: 18px;
+}
+.fuelux .disabled-tree span {
+  color: #aaa !important;
+  cursor: default !important;
+}
+.fuelux .disabled-tree .tree-item-name {
+  background-color: #fff !important;
+}
+.fuelux .disabled-tree .tree-item-name:hover .tree-label {
+  border-bottom: 0 !important;
+}
+.fuelux .disabled-tree .tree-branch-name:hover .tree-label {
+  border-bottom: 0 !important;
+}
+.fuelux .disabled-tree .tree-item {
+  cursor: default;
+}
+.menu-tree > .tree > li:not(tree-branch),
+.menu-tree > .tree > .tree-branch:last-child > ul > .tree-item:last-child,
+.menu-tree > .tree > .mCustomScrollBox > .mCSB_container > li:not(tree-branch),
+.menu-tree > .tree > .mCustomScrollBox > .mCSB_container > .tree-branch:last-child > ul > .tree-item:last-child {
+  border: none !important;
+}

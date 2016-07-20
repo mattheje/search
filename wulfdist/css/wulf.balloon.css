@@ -1,0 +1,232 @@
+/*!
+ * WULF v1.2.6 (http://wulf-demo.dynamic.nsn-net.net/)
+ * Copyright 2016 Nokia Solutions and Networks. All rights Reserved.
+ */
+
+/*
+ * WULF (http://networks.nokia.com/)
+ * Copyright (C) 2015 Nokia Solutions and Networks. All rights Reserved.
+ */
+/*
+ * WULF (http://networks.nokia.com/)
+ * Copyright (C) 2015 Nokia Solutions and Networks. All rights Reserved.
+ */
+/*
+ * WULF (http://networks.nokia.com/)
+ * Copyright (C) 2015 Nokia Solutions and Networks. All rights Reserved.
+ */
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  font-family: "Nokia Pure", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  white-space: normal;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #000;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+
+  line-break: auto;
+}
+.popover.top {
+  margin-top: -13px;
+}
+.popover.right {
+  margin-left: 13px;
+}
+.popover.bottom {
+  margin-top: 13px;
+}
+.popover.left {
+  margin-left: -13px;
+}
+.popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+}
+.popover-content {
+  padding: 9px 14px;
+}
+.popover > .arrow,
+.popover > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.popover > .arrow {
+  border-width: 14px;
+}
+.popover > .arrow:after {
+  content: "";
+  border-width: 13px;
+}
+.popover.top > .arrow {
+  bottom: -14px;
+  left: 50%;
+  margin-left: -14px;
+  border-top-color: #000;
+  border-bottom-width: 0;
+}
+.popover.top > .arrow:after {
+  bottom: 1px;
+  margin-left: -13px;
+  content: " ";
+  border-top-color: #000;
+  border-bottom-width: 0;
+}
+.popover.right > .arrow {
+  top: 50%;
+  left: -14px;
+  margin-top: -14px;
+  border-right-color: #000;
+  border-left-width: 0;
+}
+.popover.right > .arrow:after {
+  bottom: -13px;
+  left: 1px;
+  content: " ";
+  border-right-color: #000;
+  border-left-width: 0;
+}
+.popover.bottom > .arrow {
+  top: -14px;
+  left: 50%;
+  margin-left: -14px;
+  border-top-width: 0;
+  border-bottom-color: #000;
+}
+.popover.bottom > .arrow:after {
+  top: 1px;
+  margin-left: -13px;
+  content: " ";
+  border-top-width: 0;
+  border-bottom-color: #000;
+}
+.popover.left > .arrow {
+  top: 50%;
+  right: -14px;
+  margin-top: -14px;
+  border-right-width: 0;
+  border-left-color: #000;
+}
+.popover.left > .arrow:after {
+  right: 1px;
+  bottom: -13px;
+  content: " ";
+  border-right-width: 0;
+  border-left-color: #000;
+}
+/*
+ * WULF (http://networks.nokia.com/)
+ * Copyright (C) 2015 Nokia Solutions and Networks. All rights Reserved.
+ */
+.popover {
+  padding: 2px 0 2px 0;
+  margin: 10px;
+  color: #fff;
+  text-align: left;
+  background-image: -webkit-linear-gradient(top, #666 0%, #000 100%);
+  background-image:      -o-linear-gradient(top, #666 0%, #000 100%);
+  background-image:         linear-gradient(to bottom, #666 0%, #000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff666666', endColorstr='#ff000000', GradientType=0);
+  background-repeat: repeat-x;
+  border: 1px solid #000;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 5px 7px 0 #a6a6a6;
+          box-shadow: 0 5px 7px 0 #a6a6a6;
+}
+.popover.top {
+  margin-top: -18px;
+}
+.popover.top > .arrow {
+  margin-left: -24px;
+}
+.popover.right {
+  margin-left: 18px;
+}
+.popover.right > .arrow:after {
+  border-right-color: #333;
+}
+.popover.bottom {
+  margin-top: 18px;
+}
+.popover.bottom > .arrow {
+  margin-left: -24px;
+}
+.popover.bottom > .arrow:after {
+  top: 1.5px;
+  border-bottom-color: #666;
+}
+.popover.left {
+  margin-left: -18px;
+}
+.popover.left > .arrow:after {
+  border-right-color: #333;
+}
+.popover-title {
+  color: #fff;
+  text-align: left;
+  background-color: transparent;
+}
+.popover-content {
+  position: relative;
+}
+.popover-content .icon-popover-text {
+  max-width: 220px;
+  margin: 0 25px 0 0;
+}
+.popover-content .n-close > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  float: right;
+  width: 16px;
+  height: 16px;
+  margin: 10px 10px 0 0;
+  overflow: hidden;
+  background-color: #e0e0e0;
+  border: 1px solid #e0e0e0;
+          border-radius: 50%;
+
+     -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.popover-content .n-close > span:hover {
+  border: 1px solid #00a1cc;
+}
+.popover-content .btn-close {
+  top: 50%;
+  display: inline-block;
+  margin: 3px -3px 0 18px;
+  overflow: hidden;
+  zoom: .80;
+  -moz-transform: scale(.8);
+  -moz-transform-origin: 0 0;
+}
